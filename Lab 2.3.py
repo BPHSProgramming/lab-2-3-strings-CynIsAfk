@@ -31,18 +31,19 @@ print(phrase_part2,phrase_part3,phrase_part1,sep="\n")
 
 print("Task #4")
 number = input("Enter 5 digit number: ")
-number_1 = int(number[0])
-number_2 = int(number[1])
-number_3 = int(number[2])
-number_4 = int(number[3])
-number_5 = int(number[4])
-number_total = number_1 + number_2 + number_3 + number_4 + number_5
-print(number_total)
+number_1 = number[0]
+number_2 = number[1]
+number_3 = number[2]
+number_4 = number[3]
+number_5 = number[4]
+number_total = int(number_1 + number_2 + number_3 + number_4 + number_5)
+print(f"{number_1} + {number_2} + {number_3} + {number_4} + {number_5} = {number_total}")
 
 print("Task #5")
 funny_phrase = "Why, you stuck-up half-witted scruffy-looking nerf herder."
-print(funny_phrase[0:57:2])
-print(funny_phrase[-57::2])
+phrase_slice = funny_phrase.find(".")
+print(funny_phrase[0:int(phrase_slice):2])
+print(funny_phrase[-int(phrase_slice)::2])
 
 print("Task #6")
 from datetime import date
