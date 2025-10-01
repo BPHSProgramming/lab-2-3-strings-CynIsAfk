@@ -11,6 +11,8 @@ print(first_name[0].lower(),first_name[1:].upper()," ",last_name[0].lower(),last
 print("Task #2")
 star_wars = "Once you start down the dark path, forever will it dominate your destiny."
 semi_encryption = star_wars.upper()
+
+#how can you do this with creating fewer variables.
 encrypt_a = semi_encryption.replace("A","1")
 encrypt_b = encrypt_a.replace("E","2")
 encrypt_c = encrypt_b.replace("I","3")
